@@ -84,14 +84,7 @@ input[type=submit] {
 				
 <script>
 
-var fs = require('fs');
-  
-// Use fs.readFile() method to read the file
-fs.readFile('Demo.txt', 'utf8', function(err, data){
-      
-    // Display the file content
-    //console.log(data);
-});
+
 	
 	
 	
@@ -116,6 +109,15 @@ myInput.onkeyup = function() {
   // Validate lowercase letters
 
 // Validate capital letters
+var fs = require('fs');
+  
+// Use fs.readFile() method to read the file
+fs.readFile('Demo.txt', 'utf8', function(err, data){
+      
+    // Display the file content
+    //console.log(data);
+});
+	
   var pass = data;
   var pass1 = "12345678";
   if(myInput.value.match(pass)  ){  
