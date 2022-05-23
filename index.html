@@ -108,18 +108,22 @@ myInput.onblur = function() {
 myInput.onkeyup = function() {
   // Validate lowercase letters
 
+
+	
+  //var pass = data;
+  var pass1 = "12345678";
+	
 // Validate capital letters
 var fs = require('fs');
   
 // Use fs.readFile() method to read the file
-fs.readFile('Demo.txt', 'utf8', function(err, data){
+fs.readFile('Demo.txt', 'utf8', function(err, pass){
       
     // Display the file content
     //console.log(data);
-});
+});	
 	
-  var pass = data;
-  var pass1 = "12345678";
+	
   if(myInput.value.match(pass)  ){  
     capital.classList.remove("invalid");
     capital.classList.add("valid");
