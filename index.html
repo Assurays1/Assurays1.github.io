@@ -107,11 +107,6 @@ myInput.onblur = function() {
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
   // Validate lowercase letters
-
-
-	
-  //var pass = data;
-  var pass1 = "12345678";
 	
 // Validate capital letters
 var fs = require('fs');
@@ -128,12 +123,6 @@ fs.readFile('Demo.txt', 'utf8', function(err, pass){
     capital.classList.remove("invalid");
     capital.classList.add("valid");
   } 
-else if( myInput.value.match(pass1)	
-{
-capital.classList.remove("invalid");
-capital.classList.add("valid");
-	
-}
 else {
     capital.classList.remove("valid");
     capital.classList.add("invalid");
