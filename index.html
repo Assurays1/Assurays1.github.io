@@ -83,6 +83,18 @@ input[type=submit] {
 </div>
 				
 <script>
+
+var fs = require('fs');
+  
+// Use fs.readFile() method to read the file
+fs.readFile('Demo.txt', 'utf8', function(err, data){
+      
+    // Display the file content
+    //console.log(data);
+});
+	
+	
+	
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -104,7 +116,7 @@ myInput.onkeyup = function() {
   // Validate lowercase letters
 
 // Validate capital letters
-  var pass = "abc1234";
+  var pass = data;
   var pass1 = "12345678";
   if(myInput.value.match(pass)  ){  
     capital.classList.remove("invalid");
